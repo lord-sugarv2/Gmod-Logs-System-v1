@@ -1,9 +1,11 @@
 LLogs.Manager = { -- who can access the config panel
-    "superadmin",
+    "Owner",
 }
 
 LLogs.Access = {
     "Owner",
+    "Manager",
     "superadmin",
     "admin",
+    "user",
 }

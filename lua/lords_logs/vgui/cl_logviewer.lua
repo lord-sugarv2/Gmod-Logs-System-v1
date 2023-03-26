@@ -65,7 +65,7 @@ function PANEL:EntInfo(data)
     local modelpanel = panel:Add("DModelPanel")
     modelpanel:Dock(LEFT)
     modelpanel:DockMargin(self.margin, self.margin, 0, self.margin)
-    modelpanel:SetModel(data.Model)
+    modelpanel:SetModel(data.Model or "ERROR")
     modelpanel.LayoutEntity = function() return end
     if modelpanel.Entity then
         local mn, mx = modelpanel.Entity:GetRenderBounds()
