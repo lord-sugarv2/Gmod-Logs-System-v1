@@ -42,7 +42,7 @@ function PANEL:PopulateData(data)
 
             local w2, h2 = PIXEL.DrawSimpleText(v.Date, "LLogs:20", self.margin, h/2, s:IsHovered() and PIXEL.OffsetColor(PIXEL.Colors.Primary, 10) or PIXEL.Colors.Primary, 0, 1)
             local w3, h3 = PIXEL.DrawSimpleText(os.date("%I:%M:%S", v.Timestamp), "LLogs:20", self.margin + w2 + 10, h/2, s:IsHovered() and PIXEL.OffsetColor(PIXEL.Colors.Positive, 10) or PIXEL.Colors.Positive, 0, 1)
-            PIXEL.DrawSimpleText(v.Message, "LLogs:20", self.margin + w2 + 20 + w3, h/2, s:IsHovered() and PIXEL.OffsetColor(LLogs.Modules[v.Module].Color, 10) or LLogs.Modules[v.Module].Color, 0, 1)
+            PIXEL.DrawSimpleText(v.Message, "LLogs:20", self.margin + w2 + 20 + w3, h/2, s:IsHovered() and PIXEL.OffsetColor(LLogs.Modules[v.Module] and LLogs.Modules[v.Module].Color or color_white, 10) or LLogs.Modules[v.Module] and LLogs.Modules[v.Module].Color or color_white, 0, 1)
         end
         panel.DoClick = function()
             net.Start("LLogs:RequestLog")

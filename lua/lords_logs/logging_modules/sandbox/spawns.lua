@@ -1,5 +1,5 @@
 local MODULE = {}
-MODULE.Category = "Spawns"
+MODULE.Category = "Sandbox"
 MODULE.Name = "Effects"
 MODULE.Color = Color(255, 100, 100)
 
@@ -11,7 +11,7 @@ end)
 LLogs.AddModule(MODULE)
 
 local MODULE = {}
-MODULE.Category = "Spawns"
+MODULE.Category = "Sandbox"
 MODULE.Name = "NPCs"
 MODULE.Color = Color(255, 100, 100)
 
@@ -23,7 +23,7 @@ end)
 LLogs.AddModule(MODULE)
 
 local MODULE = {}
-MODULE.Category = "Spawns"
+MODULE.Category = "Sandbox"
 MODULE.Name = "Props"
 MODULE.Color = Color(255, 100, 100)
 
@@ -35,7 +35,7 @@ end)
 LLogs.AddModule(MODULE)
 
 local MODULE = {}
-MODULE.Category = "Spawns"
+MODULE.Category = "Sandbox"
 MODULE.Name = "Ragdolls"
 MODULE.Color = Color(255, 100, 100)
 
@@ -47,7 +47,7 @@ end)
 LLogs.AddModule(MODULE)
 
 local MODULE = {}
-MODULE.Category = "Spawns"
+MODULE.Category = "Sandbox"
 MODULE.Name = "SENTs"
 MODULE.Color = Color(255, 100, 100)
 
@@ -59,7 +59,7 @@ end)
 LLogs.AddModule(MODULE)
 
 local MODULE = {}
-MODULE.Category = "Spawns"
+MODULE.Category = "Sandbox"
 MODULE.Name = "Vehicles"
 MODULE.Color = Color(255, 100, 100)
 
@@ -71,7 +71,7 @@ end)
 LLogs.AddModule(MODULE)
 
 local MODULE = {}
-MODULE.Category = "Spawns"
+MODULE.Category = "Sandbox"
 MODULE.Name = "SWEPs"
 MODULE.Color = Color(255, 100, 100)
 

@@ -9,6 +9,7 @@ function LLogs:Open()
     LLogs.Menu:MakePopup()
     LLogs.Menu:Center()
     LLogs.Menu:SetTitle(string.format(LLogs.GetServerValue("MenuTitle"), LLogs.GetServerValue("ServerName")))
+    LLogs.Menu:SetSizable(true)
 
     local panel = LLogs.Menu:Add("LLogs:Main")
     panel:Dock(FILL)

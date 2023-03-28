@@ -1,6 +1,6 @@
 local MODULE = {}
-MODULE.Category = "Damage"
-MODULE.Name = "Deaths"
+MODULE.Category = "General"
+MODULE.Name = "Kills / Deaths"
 MODULE.Color = Color(255, 100, 100)
 
 hook.Add("PlayerDeath", "LLogs:"..MODULE.Name, function(victim, weapon, attacker)
@@ -31,7 +31,7 @@ end)
 LLogs.AddModule(MODULE)
 
 local MODULE = {}
-MODULE.Category = "Damage"
+MODULE.Category = "General"
 MODULE.Name = "Damage"
 MODULE.Color = Color(255, 100, 100)
 

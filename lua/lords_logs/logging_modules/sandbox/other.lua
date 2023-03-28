@@ -1,5 +1,5 @@
 local MODULE = {}
-MODULE.Category = "Other"
+MODULE.Category = "General"
 MODULE.Name = "Chat"
 MODULE.Color = Color(255, 100, 100)
 

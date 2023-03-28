@@ -123,10 +123,11 @@ net.Receive("LLogs:RequestWithFilter", function(len, ply)
     ply.LLogsPreventUse = true
 
     local moduleName, filter = net.ReadString(), net.ReadString()
+    filter = string.lower(filter)
     LLogs.SearchDatabase(moduleName, function(results, moduleName)
         local data = {}
         for k, v in ipairs(results) do
-            if not string.find(v.Message, filter) then continue end
+            if not string.find(string.lower(v.Message), filter) then continue end
             table.Add(data, {v})
         end
 

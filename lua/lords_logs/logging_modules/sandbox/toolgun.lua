@@ -1,5 +1,5 @@
 local MODULE = {}
-MODULE.Category = "Toolgun"
+MODULE.Category = "Sandbox"
 MODULE.Name = "Toolgun"
 MODULE.Color = Color(255, 100, 100)
 
@@ -12,7 +12,7 @@ end)
 LLogs.AddModule(MODULE)
 
 local MODULE = {}
-MODULE.Category = "Toolgun"
+MODULE.Category = "Sandbox"
 MODULE.Name = "Undo"
 MODULE.Color = Color(255, 100, 100)
 
