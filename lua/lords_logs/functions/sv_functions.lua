@@ -208,7 +208,7 @@ end)
 util.AddNetworkString("LLogs:LogInfo")
 util.AddNetworkString("LLogs:RequestLog")
 net.Receive("LLogs:RequestLog", function(len, ply)
-    if not table.HasValue(LLogs.Manager, ply:GetUserGroup()) then LLogs:Notify(ply, 1, 3, "You do not have access to this.") return end
+    if not LLogs.CanAccess(ply) then LLogs:Notify(ply, 1, 3, "You do not have access to this.") return end
     if ply.LLogsPreventUse then LLogs:Notify(ply, 1, 3, "Wait: Still proccessing your other action.") return end
     ply.LLogsPreventUse = true
 
