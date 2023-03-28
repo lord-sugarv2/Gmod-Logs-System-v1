@@ -28,6 +28,7 @@ MODULE.Name = "Adverts"
 MODULE.Color = Color(255, 100, 100)
 
 hook.Add("playerAdverted", "LLogs:"..MODULE.Name, function(ply, text, ent)
+    if not IsValid(ply) then return end
     local str = "%s (%s) adverted: %s"
     str = string.format(str, ply:Nick(), ply:SteamID(), text)
     LLogs.Log(MODULE.Name, str, LLogs.FormatPlayer(ply))
@@ -40,6 +41,7 @@ MODULE.Name = "Agenda"
 MODULE.Color = Color(255, 100, 100)
 
 hook.Add("agendaUpdated", "LLogs:"..MODULE.Name, function(ply, tbl, text)
+    if not IsValid(ply) then return end
     local str = "%s (%s) updated thier agenda: %s"
     str = string.format(str, ply:Nick(), ply:SteamID(), text)
     LLogs.Log(MODULE.Name, str, LLogs.FormatPlayer(ply))
