@@ -1,5 +1,6 @@
 "Pretty good for a free logs system" - Pimp Sugar#1108
-Pixel is required 🥰 https://github.com/Pulsar-Dev/pulsar-lib
+
+Pixel is required 🥰 https://github.com/Pulsar-Dev/pixel-ui
 
 
 
